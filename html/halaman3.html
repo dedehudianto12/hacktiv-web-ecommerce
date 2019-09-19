@@ -11,38 +11,45 @@
                 <div id="name">
                     <label for="first">First Name</label>
                     <br>    
-                    <input name="first" type="text" id="first">
+                    <input name="first" type="text" id="first" minlength="1" maxlength="15" required>
                     <br>
                     <br>
                     <label for="last">Last Name</label>
                     <br>
-                    <input name="last" type="text id="last">
+                    <input name="last" type="text id="last" minlength="1" maxlength="15" required>
                 </div>
                 <br>
                 <div id="username">
                     <label for="username">Username</label>
                     <br>
-                    <input id="username" name="username" type="text">
+                    <input id="username" name="username" type="text" minlength="1" maxlength="15" required>
                 </div>
                 <br>
                 <div id="email">
                     <label for="email">Your Email</label>
                     <br>
-                    <input id="email" type="text" name="email">
+                    <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                 </div>
                 <br>
                 <div id="ttl">
                     <label for="lahir">Tempat Tanggal Lahir</label>
                     <br>
-                    <input type="text" name="lahir" id="lahir">
-                    <input type="number" name="lahir" id="lahir">
-                    <input type="number" name="lahir" id="lahir">
-                    <input type="number" name="lahir" id="lahir">
+                    <
+                        <input type="number" name="tanggal" id="lahir" required step="1" min="1" max="31">
+                        <input type="number" name="bulan" id="lahir" step="1" min="1" max="12">
+                    <<input type="number" name="tahun" id="lahir" step="1" min="1800" max="2009" minlength="4">
                 </div>
                 <br>
                 <div id="gender">
-                    <input type="checkbox" id="gender "
-                </div>    
+                    <span>Your Gender</span>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="femal">Female</label>
+                </div>
+                <div id="Buat Account">
+                    <input type="submit" value="Buat Account"
+                </div>   
             </form>
         </section>
         
